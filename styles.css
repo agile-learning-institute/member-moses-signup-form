@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./assets/Norse-Bold.otf);
+}
+
 body {
     display: flex;
     justify-content: space-between;
@@ -13,10 +18,61 @@ body {
 
 header {
     flex: 1;
-    background-color: gray;
+    background-image: url(./assets/path-less-taken.jpg);
+    background-size: cover;
+    /* background-position: -50px; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    vertical-align: middle;
 }
 
 main {
     flex: 2;
-    background-color: goldenrod;
+    background-color: aquamarine;
+}
+
+/* align-self: flex-start|flex-end|center|baseline|stretch; */
+
+.heading-cont {
+    background-color: rgba(0,0,0,0.7);
+    /* align-self: center; */
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    margin-top: 200px;
+}
+
+.photo-credit {
+    /* align-self: center; */
+    /* margin-top: auto; */
+    margin-bottom: 20px;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    /* font-weight: bolder; */
+    /* text-shadow: black 1px 0 10px; */
+
+}
+
+img {
+    height: 100px;
+    margin: 10px 0 10px 0;
+}
+
+h1 {
+    margin: auto 0;
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 80px;
+}
+
+.photo-credit, a {
+    color: white;
+    font-weight: bolder;
+    text-shadow: black 1px 0 10px;
 }
