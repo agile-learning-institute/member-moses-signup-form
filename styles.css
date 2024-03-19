@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+header {
+    flex: 1;
+    background-color: gray;
+}
+
+main {
+    flex: 2;
+    background-color: goldenrod;
+}
