@@ -7,82 +7,123 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <div class="heading-cont">
-        <img src="./assets/odin-lined.png" alt="odin-lined.png" />
-        <h1>ODIN</h1>
+    <div class="container">
+      <div class="left-view">
+        <div class="heading-cont">
+          <img src="./assets/odin-lined.png" alt="odin-lined.png" />
+          <h1>ODIN</h1>
+        </div>
+
+        <div class="photo-credit">
+          <p>
+            Photo by
+            <a
+              href="https://unsplash.com/@r2dev2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Denis Shchigolev</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/a-man-with-two-baskets-walking-up-a-mountain-gM0JEROGjkA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </p>
+        </div>
       </div>
 
-      <div class="photo-credit">
-        <p>
-          Photo by
-          <a
-            href="https://unsplash.com/@r2dev2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Denis Shchigolev</a
-          >
-          on
-          <a
-            href="https://unsplash.com/photos/a-man-with-two-baskets-walking-up-a-mountain-gM0JEROGjkA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Unsplash</a
-          >
-        </p>
-      </div>
-    </header>
-
-    <main>
-      <form action="" method="">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams.
-          <br />Sign up now to get started.
-        </p>
-        <p>You know you want to.</p>
-        <section>
-          <fieldset>
-            <p>Let's do this!</p>
-            <ul>
-              <li>
-                <label for="">FIRST NAME</label>
-                <input type="text" />
-              </li>
-              <li>
-                <label for="">LAST NAME</label>
-                <input type="text" />
-              </li>
-              <li>
-                <label for="">EMAIL</label>
-                <input type="email" />
-              </li>
-              <li>
-                <label for="">PHONE NUMBER</label>
-                <input type="tel" />
-              </li>
-              <li>
-                <label for="">PASSWORD</label>
-                <input type="password" />
-              </li>
-              <li>
-                <label for="">CONFIRM PASSWORD</label>
-                <input type="password" />
-              </li>
-            </ul>
-          </fieldset>
-        </section>
-        <section>
-          <button>Create Account</button>
+      <div class="right-view">
+        <div class="intro">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />Sign up now to get started. <br />
+            <br />
+            know you want to.
+          </p>
+        </div>
+        <div class="details">
+          <form action="#" method="">
+            <div class="form-cont">
+              <div>
+                <p>Let's do this!</p>
+              </div>
+              <div class="input-container">
+                <div class="input-cont">
+                  <label for="first-name"
+                    >FIRST NAME <span class="must">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    pattern=".{3,}"
+                    title="Name should be at-least 3 characters"
+                  />
+                  <span></span>
+                </div>
+                <div class="input-cont">
+                  <label for="last-name">LAST NAME</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    pattern=".{3,}"
+                    title="Name should be at-least 3 characters"
+                  />
+                  <span></span>
+                </div>
+                <div class="input-cont">
+                  <label for="email">EMAIL <span class="must">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  />
+                  <span></span>
+                </div>
+                <div class="input-cont">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel" id="phone" name="phone" />
+                  <span></span>
+                </div>
+                <div class="input-cont">
+                  <label for="password"
+                    >PASSWORD <span class="must">*</span></label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least a number, an uppercase, a lowercase letter, and at least 8 or more characters"
+                  />
+                  <span></span>
+                </div>
+                <div class="input-cont">
+                  <label for="password"
+                    >CONFIRM PASSWORD <span class="must">*</span></label
+                  >
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    required
+                    title="Password Does Not Match"
+                  />
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="enter">
+          <button type="submit">Create Account</button>
           <p>Already have an account? <a href="">Log in</a></p>
-        </section>
-      </form>
-    </main>
-
-    <!-- path-less-taken -->
-    <!-- Photo by <a href="https://unsplash.com/@melkita_ulamun?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mara K</a> on <a href="https://unsplash.com/photos/green-grass-field-with-green-plants-C_SCxSPIKwQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-
-    <!-- go-confidently
-    Photo by <a href="https://unsplash.com/@archana_reddy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Archana Reddy</a> on <a href="https://unsplash.com/photos/brown-wooden-bridge-in-the-forest-t6DKqQLpafk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-
-    <!-- untra-min 
-    Photo by <a href="https://unsplash.com/@r2dev2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Denis Shchigolev</a> on <a href="https://unsplash.com/photos/a-man-with-two-baskets-walking-up-a-mountain-gM0JEROGjkA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
