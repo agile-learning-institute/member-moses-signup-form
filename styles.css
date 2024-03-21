@@ -13,7 +13,9 @@
   display: flex;
   justify-content: space-between;
   width: 100dvw;
+  min-width: 700px;
   height: 100dvh;
+  flex-wrap: wrap;
 }
 
 /* ####### Header Styling ########### */
@@ -72,15 +74,17 @@ h1 {
 
 .intro {
   flex: 1;
-  padding: 0 50px 50px 50px;
+  padding: 20px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 60em;
 }
 
 .details {
     flex: 1.1;
     box-shadow: 0px -10px 15px rgb(175, 175, 175), 0px 10px 15px rgb(175, 175, 175);
+    padding: 20px;
 }
 
 .enter {
@@ -154,9 +158,11 @@ button:active {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px 100px;
+    gap: 20px 50px;
     overflow: auto;
     padding: 5px;
+    max-width: 50em;
+    /* max-height: auto; */
 }
 
 input {
